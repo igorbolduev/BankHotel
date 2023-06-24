@@ -1,8 +1,37 @@
 {
+  "scripts": {},
+
   "devDependencies": {
-    "browser-sync": "^2.29.3"
+    "browser-sync": "^2.29.3",
+    "gulp": "^4.0.2",
+    "gulp-dart-sass": "^1.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "sass": "^1.63.6",
+    "stylelint": "^15.8.0",
+    "stylelint-config-standard": "^33.0.0"
   },
-  "scripts": {
-    
-  }
+
+  "browserlist": [
+    "last 2 versions",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all",
+    "not < 0.25%"
+  ],
+
+  "editorconfig-cli": [
+    "*.json",
+    "*.js",
+    "source/*.html",
+    "source/js/*.js",
+    "source/img/**/*.svg",
+    "soirce/sass/**/*.scss"
+  ],
+
+  "engines": {
+    "node": "^16"
+  },
+
+  "type": "module"
 }
