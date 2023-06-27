@@ -1,17 +1,20 @@
 {
-  "scripts": {},
-
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --config stylelint-config-standard-scss",
+    "lint": "npm run editorconfig && npm run stylelint"
+  },
   "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "github:htmlacademy/editorconfig-cli",
     "browser-sync": "^2.29.3",
     "gulp": "^4.0.2",
     "gulp-dart-sass": "^1.1.0",
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^9.0.1",
     "sass": "^1.63.6",
-    "stylelint": "^15.8.0",
-    "stylelint-config-standard": "^33.0.0"
+    "stylelint": "^15.9.0",
+    "stylelint-config-standard-scss": "^9.0.0"
   },
-
   "browserlist": [
     "last 2 versions",
     "not dead",
@@ -19,7 +22,6 @@
     "not op_mini all",
     "not < 0.25%"
   ],
-
   "editorconfig-cli": [
     "*.json",
     "*.js",
@@ -28,10 +30,8 @@
     "source/img/**/*.svg",
     "soirce/sass/**/*.scss"
   ],
-
   "engines": {
     "node": "^16"
   },
-
   "type": "module"
 }
