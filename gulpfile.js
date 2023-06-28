@@ -10,35 +10,43 @@ import browserSync from "browser-sync";
 
 // Styles
 
-const buildStyles = () => {
+export const styles = () => {
     return gulp.src('source/sass/style.scss', { sourcemaps: true })
+
     .pipe(plumber())
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass())
     .pipe(postcss([
         autoprefixer(),
         csso()
     ]))
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest('source/css/style.css'))
+
+    .pipe(gulp.dest('source/css/', { sourcemaps: "." }))
+    .pipe(browserSync.stream())
 }
 
 // Server
 
-const serve = () => {
+export const serve = () => {
     browserSync.init({
         server: {
             baseDir: 'source'
-        }
+        },
+        cors: true,
+        notify: false,
+        ui: false,
     });
 }
 
 // Watcher
 
-const watcher = () => {
-    gulp.watch('source/sass/**/*.scss', ['sass']);
+export const watcher = () => {
+    gulp.watch('source/sass/**/*.scss', ['sass']).on('change', browserSync.reload);
     gulp.watch('source/*.html').on('change', browserSync.reload);
 }
 
+
+
 export default gulp.series (
- buildStyles, serve , watcher
+ styles, watcher,  serve 
 );
