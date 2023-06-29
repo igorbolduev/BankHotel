@@ -27,7 +27,7 @@ export const styles = () => {
 
 // Server
 
-export const serve = () => {
+export const serve = (done) => {
     browserSync.init({
         server: {
             baseDir: 'source'
@@ -36,17 +36,21 @@ export const serve = () => {
         notify: false,
         ui: false,
     });
-}
+    done();
+};
+
+export const reload = (done) => {
+    browserSync.reload();
+    done();
+};
 
 // Watcher
 
-export const watcher = () => {
-    gulp.watch('source/sass/**/*.scss', ['sass']).on('change', browserSync.reload);
-    gulp.watch('source/*.html').on('change', browserSync.reload);
-}
-
-
+export const watcher = () => { 
+    gulp.watch('source/sass/**/*.scss', gulp.series(styles)); 
+    gulp.watch("source/*.html", gulp.series(reload)); 
+  };
 
 export default gulp.series (
- styles, watcher,  serve 
+ styles, serve, watcher
 );
