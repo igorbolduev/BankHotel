@@ -34,22 +34,24 @@
     </header>
 
     <main class="main__page">
-      <section class="hero">
-        <div class="hero__wrapper">
-          <h1 class="hero__title">rooms // restaurant // congress hall // wine bar</h1>
-          <span class="hero__flag flag">Art & Congress hall</span>
-          <span class="hero__graduation">
+      <section class="intro">
+        <div class="intro__wrapper">
+          <h1 class="intro__title">rooms // restaurant // congress hall // wine bar</h1>
+          <span class="intro__flag flag">Art & Congress hall</span>
+          <span class="intro__graduation">
             The luxurious hotel in the most beautiful European city with an exclusive restaurant, conference-hall, and art-bar.
           </span>
-          <picture class="hero__image"></picture>
-          <form class="hero__form form" action="#" method="post">
+          <picture class="intro__image">
+            <img src="/images/img/intro.jpg" alt="intro photo">
+          </picture>
+          <form class="intro__form form" action="#" method="post">
                 <select class="form__check-in"></select>
                 <select class="form__check-out"></select>
                 <button class="form__button" type="button"></button>
           </form>
-          <div class="hero__footer">
-            <span class="hero__footer-tel"> +38 032 297 50 20 </span>
-            <span class="hero__footer-adress"> 8 Lystopadovoho Chynu,Lviv </span>
+          <div class="intro__footer">
+            <span class="intro__footer-tel"> +38 032 297 50 20 </span>
+            <span class="intro__footer-adress"> 8 Lystopadovoho Chynu,Lviv </span>
           </div>
         </div>
       </section>
@@ -57,7 +59,9 @@
       <section class="about">
         <div class="about__wrapper">
           <h2 class="about__title">about us</h2>
-          <picture class="about__image"></picture>
+          <picture class="about__image">
+            <img src="/images/img/reception.jpg" alt="reception photo">
+          </picture>
           <h3 class="about__subtitle">High quality</h3>
           <div class="about__label">
             <div class="about__label-icon"></div>
@@ -77,17 +81,20 @@
           <h2 class="rooms__title">Rooms & apartments</h2>
           <span class="rooms__flag flag">70 rooms</span>
           <p class="rooms__description">All room decoration was made with ecological certified and safe materials.</p>
-          <picture class="rooms__image slider"></picture>
-
-          <div class="slider__card">
-            <span class="slider__card-counter"></span>
-            <h3 class="slider__card-title"></h3>
-            <p class="slider__card-description">
-              The Superior twin is perfect for those who plan to stay long.
-              The spacious and bright room is equipped with deluxe Italian furniture and has a beautiful view to the historical part of the city.
-              Stylish interior design and comfortable beds will make your stay cozy and pleasant.
-            </p>
-            <button class="slider__card-button" type="button"></button>
+          <div class="rooms__slider slider">
+            <picture class="rooms__image slider">
+              <img src="/images/img/bed.jpg" alt="bed photo">
+            </picture>
+            <div class="slider__card">
+              <span class="slider__card-counter"></span>
+              <h3 class="slider__card-title"></h3>
+              <p class="slider__card-description">
+                The Superior twin is perfect for those who plan to stay long.
+                The spacious and bright room is equipped with deluxe Italian furniture and has a beautiful view to the historical part of the city.
+                Stylish interior design and comfortable beds will make your stay cozy and pleasant.
+              </p>
+              <button class="slider__card-button" type="button"></button>
+            </div>
           </div>
         </div>
       </section>
@@ -96,13 +103,19 @@
         <div class="fasilities__wrapper">
           <h2 class="fasilities__title">Our fasilities</h2>
           <span class="fasilities__flag flag">Art & Congress halls</span>
-          <picture class="fasilities__image-title"></picture>
+          <picture class="fasilities__image-title">
+            <img src="/images/img/kitchen.jpg" alt="kitchen photo">
+          </picture>
           <p class="fasilities__description">
             Bank Hotel offers you a wide range of additional services and facilities.
             Visit our restaurant to try exclusive meals, book a conference hall to organize a business meeting, or relax in the art-bar.
           </p>
+
           <ul class="fasilities__list">
             <li class="fasilities__card-item">
+              <picture class="fasilities__image-card">
+                <img src="/images/img/restaraunt.jpg" alt="restaraunt photo">
+              </picture>
               <h3 class="fasilities__item-title">Ice restaurant</h3>
               <span class="fasilities__counter">01</span>
               <p class="fasilities__item-description">
@@ -111,12 +124,19 @@
               </p>
               <a class="fasilities__button"></a>
             </li>
+
             <li class="fasilities__item">
+              <picture class="fasilities__image-card">
+                <img src="/images/img/hall.jpg" alt="hall photo">
+              </picture>
               <h3 class="fasilities__item-title">conference hall</h3>
               <span class="fasilities__counter">02</span>
-              <picture class="fasilities__image-card"></picture>
             </li>
+
             <li class="fasilities__item">
+              <picture class="fasilities__image-card">
+                <img src="/images/img/bar.jpg" alt="bar photo">
+              </picture>
               <h3 class="fasilities__item-title">Wine bar “reserve”</h3>
               <span class="fasilities__counter">03</span>
               <picture class="fasilities__image-card"></picture>
@@ -127,6 +147,9 @@
 
       <section class="best">
         <h2 class="best appartments"></h2>
+        <picture class="best__picture">
+          <img src="/images/img/appartment__mob.jpg">
+        </picture>
         <p class="best__description">
           All room decoration was made with ecological certified and safe materials.
         </p>
@@ -144,21 +167,32 @@
             Explore our spacious rooms with the gorgeous view to the historical part of the city.
             Each room has an exclusive interior design decorated with modern art pieces that will make your stay unforgettable.
           </p>
+
           <ul class="gallery__image-list">
             <li class="gallery__image">
-              <picture class="gallery__image"></picture>
+              <picture class="gallery__image">
+                <img src="/images/img/gallery-1.jpg" alt="gallery photo one">
+              </picture>
             </li>
             <li class="gallery__image">
-              <picture class="gallery__image"></picture>
+              <picture class="gallery__image">
+                <img src="/images/img/gallery-2.jpg" alt="gallery photo two">
+              </picture>
             </li>
             <li class="gallery__image">
-              <picture class="gallery__image"></picture>
+              <picture class="gallery__image">
+                <img src="/images/img/gallery-3.jpg" alt="gallery photo three">
+              </picture>
             </li>
             <li class="gallery__image">
-              <picture class="gallery__image"></picture>
+              <picture class="gallery__image">
+                <img src="/images/img/gallery-4.jpg" alt="gallery photo four">
+              </picture>
             </li>
             <li class="gallery__image">
-              <picture class="gallery__image"></picture>
+              <picture class="gallery__image">
+                <img src="/images/img/gallery-5.jpg" alt="gallery photo five">
+              </picture>
             </li>
           </ul>
           <p class="gallery__greeting">It is our pleasure to meet your most unrealistic expectations.</p>
@@ -171,6 +205,10 @@
           <h2 class="connect__title">get in touch</h2>
           <span class="connect__tel">+38 032 297 50 20</span>
           <span class="connect__adress">8 Lystopadovoho Chynu,Lviv</span>
+          <picture class="connect__image">
+            <img src="/images/img/chair.jpg" alt="chair photo">
+          </picture>
+          
           <form class="connect__form" action="#" method="post">
             <label class="connect__form-label">Find a room
               <select class="connect__form--check-in"></select>
