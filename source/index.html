@@ -8,34 +8,55 @@
     <title>Bank Hotel</title>
 </head>
 
-  <body class="page__body">
+  <body class="body">
     <header class="header">
-      <div class="header__wrapper">
-        <span class="header__logo"> BankHotel</span>
+      <div class="header__wrapper container">
+        <span class="header__logo">
+          <a class="header__logo-link" href="#"> BankHotel </a>
+        </span>
           <ul class="header__menu">
-            <li class="header__menu-item"> home </li>
-            <li class="header__menu-item"> about </li>
-            <li class="header__menu-item"> rooms </li>
-            <li class="header__menu-item"> restaurant </li>
-            <li class="header__menu-item"> conference hall </li>
-            <li class="header__menu-item"> contacts </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#"> home </a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#"> about </a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#"> rooms </a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#"> restaurant </a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#"> conference hall </a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#"> contacts </a>
+            </li>
           </ul>
-          <button class="header__button js-header__button--is-open js-header__button--is-closed no-js"></button>
-          <span class="header__tel"> +38 032 297 50 20 </span>
+          <button class="header__button header__button--is-opened <-- header__button--is-closed header__button--no-js -->"></button>
+    
           <section class="header__socials socials">
+            <span class="socials__tel"> +38 032 297 50 20 </span>
             <adress class="socials__adress"> 8 Lystopadovoho Chynu,Lviv </adress>
-            <ul class="socials__media">
-              <li class="socials__media-item"> facebook </li>
-              <li class="socials__media-item"> twitter </li>
-              <li class="socials__media-item"> instagramm </li>
+            <ul class="socials__list">
+              <li class="socials__item">
+                <a class="socials__link" href="#"> facebook </a> 
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#"> twitter </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#"> instagram </a>
+              </li>
             </ul>
           </section>
       </div>
     </header>
 
-    <main class="main__page">
+    <main class="main">
       <section class="intro">
-        <div class="intro__wrapper">
+        <div class="intro__wrapper container">
           <h1 class="intro__title">rooms // restaurant // congress hall // wine bar</h1>
           <span class="intro__flag flag">Art & Congress hall</span>
           <span class="intro__graduation">
@@ -57,7 +78,7 @@
       </section>
 
       <section class="about">
-        <div class="about__wrapper">
+        <div class="about__wrapper container">
           <h2 class="about__title">about us</h2>
           <picture class="about__image">
             <img src="/images/img/reception.jpg" alt="reception photo">
@@ -77,7 +98,7 @@
       </section>
 
       <section class="rooms">
-        <div class="rooms__wrapper">
+        <div class="rooms__wrapper container">
           <h2 class="rooms__title">Rooms & apartments</h2>
           <span class="rooms__flag flag">70 rooms</span>
           <p class="rooms__description">All room decoration was made with ecological certified and safe materials.</p>
@@ -100,7 +121,7 @@
       </section>
 
       <section class="fasilities">
-        <div class="fasilities__wrapper">
+        <div class="fasilities__wrapper container">
           <h2 class="fasilities__title">Our fasilities</h2>
           <span class="fasilities__flag flag">Art & Congress halls</span>
           <picture class="fasilities__image-title">
@@ -146,17 +167,19 @@
       </section>
 
       <section class="best">
-        <h2 class="best appartments"></h2>
-        <picture class="best__picture">
-          <img src="/images/img/appartment__mob.jpg">
-        </picture>
-        <p class="best__description">
-          All room decoration was made with ecological certified and safe materials.
-        </p>
+        <div class="best__wrapper container">
+          <h2 class="best appartments"></h2>
+          <picture class="best__picture">
+            <img src="/images/img/appartment__mob.jpg">
+          </picture>
+          <p class="best__description">
+            All room decoration was made with ecological certified and safe materials.
+          </p>
+        </div>
       </section>
 
       <section class="gallery">
-        <div class="gallery__wrapper">
+        <div class="gallery__wrapper container">
           <h2 class="gallery__title">our gallery</h2>
           <span class="gallery__flag flag">Art & Congress hall</span>
           <div class="gallery__label">
@@ -201,7 +224,7 @@
       </section>
 
       <section class="connect">
-        <div class="connect__wrapper">
+        <div class="connect__wrapper container">
           <h2 class="connect__title">get in touch</h2>
           <span class="connect__tel">+38 032 297 50 20</span>
           <span class="connect__adress">8 Lystopadovoho Chynu,Lviv</span>
@@ -211,8 +234,8 @@
           
           <form class="connect__form" action="#" method="post">
             <label class="connect__form-label">Find a room
-              <select class="connect__form--check-in"></select>
-              <select class="connect__form--check-out"></select>
+              <select class="connect__form connect__form--check-in"></select>
+              <select class="connect__form connect__form--check-out"></select>
               <input class="connect__form" type="button">
             </label>
           </form>
@@ -220,23 +243,23 @@
       </section>
     </main>
 
-    <footer class="main__footer">
-      <div class="main__footer-wrapper">
-        <div class="main__footer-about about">
-          <h4 class="about__title">about us</h4>
-          <p class="new__description">The five-star hotel in a beautiful European city with a modern restaurant, conference-hall, and art-bar.</p>
+    <footer class="footer">
+      <div class="footer__wrapper container">
+        <div class="footer__about about">
+          <h3class="about__title">about us</h3>
+          <p class="about__description">The five-star hotel in a beautiful European city with a modern restaurant, conference-hall, and art-bar.</p>
         </div>
 
-        <div class="main__footer-sign sign">
-          <h4 class="sign__title">new</h4>
+        <div class="footer__sign sign">
+          <h3 class="sign__title">new</h3>
           <p class="sign__description">Sign up to our newsletter not to miss exclusive offers and information about the upcoming events.</p>
           <form class="sign__form" action="#" method="get">
             <input class="sign__input" type="email">
           </form>
         </div>
 
-        <div class="main__footer-socials socials">
-          <h4 class="socials__title">socials</h4>
+        <div class="footer__socials socials">
+          <h3 class="socials__title">socials</h3>
           <ul class="socials__list">
             <li class="socials__item">facebook</li>
             <li class="socials__item">instagram</li>
@@ -244,7 +267,7 @@
           </ul>
         </div>
 
-        <div class="main__footer-copyright copyright">
+        <div class="footer__copyright copyright">
           <span class="copyright__content">©2021 All rights reserved. BankHotel</span>
         </div>
 
