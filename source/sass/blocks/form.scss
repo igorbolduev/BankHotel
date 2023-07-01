@@ -1,0 +1,19 @@
+@media (max-width: $tablet-width) {
+    .form__check-in,
+    .form__check-out {
+        display: none;
+    }
+
+    .form__button {
+        font-style: italic;
+        position: absolute;
+        bottom: 130px;
+        right: 30px;
+        width: 120px;
+        height: 120px;
+        background-color: transparent;
+        background-image: url('/images/img/form__button.svg');
+        background-repeat: no-repeat;
+        border: none;
+    }
+}

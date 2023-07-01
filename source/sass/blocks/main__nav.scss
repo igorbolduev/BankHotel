@@ -1,0 +1,110 @@
+.main__nav {
+    position: relative;
+
+    .main__nav-toggle {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        top: -60px;
+        right: -10px;
+        background-color: $bg-secondary;
+        border: none;
+    }
+
+    &--is-opened {
+        .main__nav-toggle {
+
+            &--is-opened {
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 20px;
+                    right: 0;
+                    width: 40px;
+                    height: 1px;
+                    background-color: $white;
+                    rotate: 45deg;
+                }
+        
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 20px;
+                    left: 0;
+                    width: 40px;
+                    height: 1px;
+                    background-color: $white;
+                    rotate: -45deg;
+                }
+            }
+        }
+    }
+
+    &--is-closed {
+        .main__nav-toggle {
+            &--is-closed::before {
+                content: "";
+                position: absolute;
+                top: 15px;
+                left:0;
+                width: 40px;
+                height: 1px;
+                background-color: $white;
+                box-shadow: 0 8px $white;
+            }
+        }
+
+        .main__nav-list,
+        .socials {
+            display: none;
+        }
+    }
+}
+
+.main__nav-list {
+    margin: 0;
+    margin-top: 50px;
+    margin-bottom: 120px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.main__nav-item:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.main__nav-link {
+    font-size: 30px;
+    line-height: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $white;
+}
+
+// &--is-closed {
+//     .main__nav-toggle {
+//         position: absolute;
+//         width: 40px;
+//         height: 40px;
+//         top: -65px;
+//         right: -10px;
+//         background-color: $bg-secondary;
+//         border: none;
+        
+//         &--is-closed::before {
+//         content: "";
+//         position: absolute;
+//         top: 15px;
+//         left:0;
+//         width: 40px;
+//         height: 1px;
+//         background-color: $white;
+//         box-shadow: 0 8px $white;
+//         }
+//     }
+// }
+
+// &--no-js {
+//     display: none;
+// }
+

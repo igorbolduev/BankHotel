@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Actor&family=Antic+Didone&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Bank Hotel</title>
 </head>
@@ -14,29 +17,32 @@
         <span class="header__logo">
           <a class="header__logo-link" href="#"> BankHotel </a>
         </span>
-          <ul class="header__menu">
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="#"> home </a>
+
+        <nav class="main__nav main__nav--is-opened">
+          <ul class="main__nav-list">
+            <li class="main__nav-item">
+              <a class="main__nav-link" href="#"> home </a>
             </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="#"> about </a>
+            <li class="main__nav-item">
+              <a class="main__nav-link" href="#"> about </a>
             </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="#"> rooms </a>
+            <li class="main__nav-item">
+              <a class="main__nav-link" href="#"> rooms </a>
             </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="#"> restaurant </a>
+            <li class="main__nav-item">
+              <a class="main__nav-link" href="#"> restaurant </a>
             </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="#"> conference hall </a>
+            <li class="main__nav-item">
+              <a class="main__nav-link" href="#"> conference hall </a>
             </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="#"> contacts </a>
+            <li class="main__nav-item">
+              <a class="main__nav-link" href="#"> contacts </a>
             </li>
           </ul>
-          <button class="header__button header__button--is-opened <-- header__button--is-closed header__button--no-js -->"></button>
+          <button class="main__nav-toggle main__nav-toggle--is-opened" type="button"></button>
+        
     
-          <section class="header__socials socials">
+          <div class="socials">
             <span class="socials__tel"> +38 032 297 50 20 </span>
             <adress class="socials__adress"> 8 Lystopadovoho Chynu,Lviv </adress>
             <ul class="socials__list">
@@ -50,25 +56,28 @@
                 <a class="socials__link" href="#"> instagram </a>
               </li>
             </ul>
-          </section>
+          </div>
+
+        </nav>
       </div>
     </header>
 
     <main class="main">
       <section class="intro">
         <div class="intro__wrapper container">
-          <h1 class="intro__title">rooms // restaurant // congress hall // wine bar</h1>
-          <span class="intro__flag flag">Art & Congress hall</span>
+          <h1 class="intro__title"> BankHotel </h1>
+          <span class="intro__presents">rooms // restaurant // congress hall // wine bar</span>
           <span class="intro__graduation">
             The luxurious hotel in the most beautiful European city with an exclusive restaurant, conference-hall, and art-bar.
           </span>
           <picture class="intro__image">
-            <img src="/images/img/intro.jpg" alt="intro photo">
+            <img src="/images/img/intro.jpg" width="355" height="" alt="intro photo">
           </picture>
+          <span class="intro__flag flag">Art & Congress hall</span>
           <form class="intro__form form" action="#" method="post">
                 <select class="form__check-in"></select>
                 <select class="form__check-out"></select>
-                <button class="form__button" type="button"></button>
+                <button class="form__button" type="button"> Book room </button>
           </form>
           <div class="intro__footer">
             <span class="intro__footer-tel"> +38 032 297 50 20 </span>
