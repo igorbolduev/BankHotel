@@ -2,4 +2,6 @@
     margin: 0;
     font-family: "Arial", sans-serif, serif;
     background-color: $bg-primary;
+    display: flex;
+    flex-direction: column;
 }
