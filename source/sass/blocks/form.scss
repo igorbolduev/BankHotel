@@ -7,7 +7,7 @@
     .form__button {
         font-style: italic;
         position: absolute;
-        bottom: 100px;
+        bottom: 120px;
         right: 30px;
         width: 120px;
         height: 120px;
@@ -15,5 +15,20 @@
         background-image: url('/images/img/form__button.svg');
         background-repeat: no-repeat;
         border: none;
+
+        &--slider {
+            text-decoration: none;
+            color: $bg-secondary;
+            font-style: italic;
+            position: absolute;
+            bottom: 450px;
+            right: 30px;
+            width: 120px;
+            height: 120px;
+            background-color: transparent;
+            background-image: url('/images/img/form__button.svg');
+            background-repeat: no-repeat;
+            border: none;
+        }
     }
 }
