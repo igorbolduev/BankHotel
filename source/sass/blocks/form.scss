@@ -1,3 +1,7 @@
+    .form {
+        position: relative;
+    }
+
 @media (max-width: $tablet-width) {
     .form__check-in,
     .form__check-out {
@@ -7,8 +11,8 @@
     .form__button {
         font-style: italic;
         position: absolute;
-        bottom: 120px;
-        right: 30px;
+        bottom: 100px;
+        left: 40px;
         width: 120px;
         height: 120px;
         background-color: transparent;
@@ -21,8 +25,8 @@
             color: $bg-secondary;
             font-style: italic;
             position: absolute;
-            bottom: 450px;
-            right: 30px;
+            bottom: 70px;
+            left: 40px;
             width: 120px;
             height: 120px;
             background-color: transparent;

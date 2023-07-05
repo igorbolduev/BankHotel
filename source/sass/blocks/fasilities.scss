@@ -1,0 +1,44 @@
+.fasilities__wrapper {
+    padding: 70px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fasilities__title {
+    margin-bottom: 50px;
+    position: relative;
+    width: 263px;
+    align-self: flex-start
+}
+
+.fasilities__flag {
+    position: absolute;
+    width: 112px;
+    align-self: flex-end;
+    text-align: end;
+}
+
+.fasilities__image-title {
+    margin-bottom: 50px;
+}
+
+.fasilities__description {
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 0;
+    width: 221px;
+    align-self: flex-end;
+    font-size: 13px;
+    font-weight: 100;
+    line-height: 23px;
+}
+
+.fasilities__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+

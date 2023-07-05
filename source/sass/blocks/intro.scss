@@ -1,5 +1,4 @@
 .intro {
-    position: relative;
     background-color: $bg-secondary;
 }
 
@@ -63,10 +62,9 @@
     font-size: 12px;
     font-style: italic;
     text-transform: uppercase;
-    text-align: left;
+    align-self: baseline;
     color: $white;
     width: 117px;
-    margin-right: auto;
 }
 
 .intro__footer {

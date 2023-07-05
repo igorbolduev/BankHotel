@@ -1,4 +1,4 @@
-.title__h2 {
+h2, h3 {
     margin: 0;
     padding: 0;
     font-family: "Antic Didone", Arial, sans-serif;
@@ -7,3 +7,14 @@
     line-height: 60px;
     text-transform: uppercase;
 }
+
+h3 {
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: lowercase;
+
+    &::first-letter {
+        text-transform: uppercase;
+    }
+}
+
