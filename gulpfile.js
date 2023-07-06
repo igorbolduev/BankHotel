@@ -46,9 +46,9 @@ export const reload = (done) => {
 
 // Watcher
 
-export const watcher = () => { 
-    gulp.watch('source/sass/**/*.scss', gulp.series(styles)); 
-    gulp.watch("source/*.html", gulp.series(reload)); 
+export const watcher = () => {
+    gulp.watch('source/sass/**/*.scss', gulp.series(styles));
+    gulp.watch("source/*.html", gulp.series(reload));
   };
 
 export default gulp.series (

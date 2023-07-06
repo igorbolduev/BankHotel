@@ -1,0 +1,29 @@
+.best {
+    position: relative;
+    background-image: url("/images/img/appartment__mob.jpg");
+    width: 375px;
+    height: 896px;
+}
+
+.best__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+}
+
+.best__title {
+    margin-bottom: 530px;
+    width: 356px;
+    color: $yellow-color;
+    letter-spacing: -1px;
+}
+
+.best__description {
+    margin: 0;
+    padding: 0;
+    width: 210px;
+    font-size: 18px;
+    color: $yellow-color;
+    text-transform: uppercase;
+    align-self: flex-end;
+}
