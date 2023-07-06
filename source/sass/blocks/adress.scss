@@ -23,6 +23,17 @@
         background-color: $white;
         opacity: 0.5;
     }
+
+    &--connect {
+        margin-bottom: 70px;
+        width: 168px;
+        color: $bg-secondary;
+
+        &::before {
+            background-color: $bg-secondary;
+            opacity: 0.5;
+        }
+    }
 }
 
 .adress__geo {
@@ -31,4 +42,10 @@
     line-height: auto;
     color: $white;
     margin-bottom: 40px;
+
+    &--connect {
+        width: 176px;
+        color: $bg-secondary;
+        align-self: flex-end;
+    }
 }

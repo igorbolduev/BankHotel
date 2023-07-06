@@ -196,64 +196,71 @@
 
       <section class="gallery">
         <div class="gallery__wrapper container">
-          <h2 class="gallery__title">our gallery</h2>
-          <span class="gallery__flag flag">Art & Congress hall</span>
           <div class="gallery__label">
             <div class="gallery__label-icon"></div>
             <span class="gallery__label-text"></span>
           </div>
+          <h2 class="gallery__title">our gallery</h2>
+          <span class="gallery__flag flag">Art & Congress hall</span>
           <p class="gallery__description">
             Explore our spacious rooms with the gorgeous view to the historical part of the city.
             Each room has an exclusive interior design decorated with modern art pieces that will make your stay unforgettable.
           </p>
 
           <ul class="gallery__image-list">
-            <li class="gallery__image">
+            <li class="gallery__item">
               <picture class="gallery__image">
-                <img src="/images/img/gallery-1.jpg" alt="gallery photo one">
+                <img src="/images/img/gallery-1.jpg" width="123" height="123" alt="gallery photo one">
               </picture>
             </li>
-            <li class="gallery__image">
+            <li class="gallery__item">
               <picture class="gallery__image">
-                <img src="/images/img/gallery-2.jpg" alt="gallery photo two">
+                <img src="/images/img/gallery-2.jpg" width="220" height="147" alt="gallery photo two">
               </picture>
             </li>
-            <li class="gallery__image">
+            <li class="gallery__item">
               <picture class="gallery__image">
                 <img src="/images/img/gallery-3.jpg" alt="gallery photo three">
               </picture>
             </li>
-            <li class="gallery__image">
+            <li class="gallery__item">
               <picture class="gallery__image">
                 <img src="/images/img/gallery-4.jpg" alt="gallery photo four">
               </picture>
             </li>
-            <li class="gallery__image">
+            <li class="gallery__item">
               <picture class="gallery__image">
                 <img src="/images/img/gallery-5.jpg" alt="gallery photo five">
               </picture>
             </li>
+            
           </ul>
-          <p class="gallery__greeting">It is our pleasure to meet your most unrealistic expectations.</p>
+          <p class="gallery__greeting">It Is Our Pleasure To Meet Your Most Unrealistic Expectations.</p>
           </div>
         </div>
       </section>
 
       <section class="connect">
         <div class="connect__wrapper container">
-          <h2 class="connect__title">get in touch</h2>
-          <span class="connect__tel">+38 032 297 50 20</span>
-          <span class="connect__adress">8 Lystopadovoho Chynu,Lviv</span>
+
+          <div class="connect__adress adress">
+            <span class="adress__tel adress__tel--connect"> +38 032 297 50 20 </span>
+            <adress class="adress__geo adress__geo--connect"> 8 Lystopadovoho Chynu,Lviv </adress>
+          </div>
+          <h2 class="visually-hidden"> connect </h2>
+          <div class="connect__title">
+            <span class="connect__title-first"> get in </span>
+            <span class="connect__title-second"> touch </span>
+          </div>
           <picture class="connect__image">
             <img src="/images/img/chair.jpg" alt="chair photo">
           </picture>
           
-          <form class="connect__form" action="#" method="post">
-            <label class="connect__form-label">Find a room
-              <select class="connect__form connect__form--check-in"></select>
-              <select class="connect__form connect__form--check-out"></select>
-              <input class="connect__form" type="button">
-            </label>
+          <form class="connect__form form--connect" action="#" method="post">
+            <label class="connect__form-label"> Find a room </label>
+              <select class="form__check-in"></select>
+              <select class="form__check-out"></select>
+              <button class="form__button form__button--connect" type="button"> Book room </button>
           </form>
         </div>
       </section>
@@ -261,9 +268,9 @@
 
     <footer class="footer">
       <div class="footer__wrapper container">
-        <div class="footer__about about">
-          <h3class="about__title">about us</h3>
-          <p class="about__description">The five-star hotel in a beautiful European city with a modern restaurant, conference-hall, and art-bar.</p>
+        <div class="footer__about">
+          <h3 class="footer__about-title"> about us </h3>
+          <p class="footer__about-description">The five-star hotel in a beautiful European city with a modern restaurant, conference-hall, and art-bar.</p>
         </div>
 
         <div class="footer__sign sign">

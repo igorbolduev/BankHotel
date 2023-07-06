@@ -1,0 +1,39 @@
+.connect__wrapper {
+    position: relative;
+    padding: 100px 0;
+    margin-bottom: 200px;
+}
+
+.connect__adress {
+    display: flex;
+    flex-direction: column;
+}
+
+.connect__title {
+    display: flex;
+    flex-direction: column;
+}
+
+.connect__title-first,
+.connect__title-second {
+    font-family: "Antic Didone", Arial, sans-serif;
+    font-size: 60px;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+
+.connect__title-second {
+    color: $yellow-color;
+    text-align: end;
+}
+
+.connect__image {
+    position: absolute;
+    right: 0;
+}
+
+.connect__form-label {
+    @media(width: $mobile-width) {
+        display: none;
+    }
+}

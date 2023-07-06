@@ -34,5 +34,11 @@
             background-repeat: no-repeat;
             border: none;
         }
+
+        &--connect {
+            position: absolute;
+            bottom: -90px;
+            left: 0;
+        }
     }
 }
