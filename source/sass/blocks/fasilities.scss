@@ -40,5 +40,73 @@
     list-style-type: none;
 }
 
+.fasilities__item {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+
+    &:last-child {
+        position: relative;
+        padding-top: 100px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: $bg-secondary;
+            opacity: 0.3;
+        }
+    }
+}
+
+.fasilities__counter {
+    font-family: "Antic Didone", Arial, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.fasilities__item-title {
+    margin: 0 auto;
+
+    &--first{
+    margin-left: 100px;
+    margin-bottom: 20px;
+    width: 180px;
+    text-align: left;
+    }
+}
+
+.fasilities__item-description {
+    margin: 0;
+    margin-left: auto;
+    margin-bottom: 70px;
+    width: 223px;
+    font-size: 13px;
+    font-weight: 100;
+    line-height: 23px;
+}
+
+.fasilities__button {
+    position: absolute;
+    bottom: 140px;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    background-image: url("/images/img/button__default.svg");
+    transform: rotate(90deg);
+}
+
+.fasilities__image {
+    margin-bottom: 50px;
+
+    &--smaller {
+        margin-left: 100px;
+        margin-right: auto;
+    }
+}
 
 
