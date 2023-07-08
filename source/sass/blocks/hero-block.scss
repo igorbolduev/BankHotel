@@ -1,0 +1,34 @@
+.hero-block {
+    background-image: url("/images/img/room__space.jpg");
+    display: block;
+    width: 375px;
+    height: 470px;
+}
+
+.hero-block__wrapper {
+    position: relative;
+}
+
+.hero-block__title {
+    font-family: "Antic Didone", Arial, sans-serif;
+    font-size: 70px;
+    font-weight: 100;
+    line-height: 60px;
+    color: $yellow-color;
+    margin: 0;
+    margin-top: 100px;
+}
+
+.hero-block__button {
+    position: absolute;
+    bottom: -310px;
+    right: 0;
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    font-style: italic;
+    background-color: transparent;
+    background-image: url("/images/img/form__button.svg");
+    background-repeat: no-repeat;
+    border: none;
+}

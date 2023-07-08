@@ -29,7 +29,9 @@
 
 .connect__image {
     position: absolute;
+    bottom: -25px;
     right: 0;
+    z-index: -1;
 }
 
 .connect__form-label {

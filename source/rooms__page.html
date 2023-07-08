@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Actor&family=Antic+Didone&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Rooms Page</title>
+</head>
+
+<body class="body">
+
+  <header class="header header--rooms">
+    <div class="header__wrapper container">
+      <span class="header__logo">
+        <a class="header__logo-link" href="index.html"> BankHotel </a>
+      </span>
+
+      <nav class="main__nav main__nav--is-closed">
+        <ul class="main__nav-list">
+          <li class="main__nav-item">
+            <a class="main__nav-link" href="/index.html"> home </a>
+          </li>
+          <li class="main__nav-item">
+            <a class="main__nav-link" href="#"> about </a>
+          </li>
+          <li class="main__nav-item">
+            <a class="main__nav-link" href="/rooms__page.html"> rooms </a>
+          </li>
+          <li class="main__nav-item">
+            <a class="main__nav-link" href="#"> restaurant </a>
+          </li>
+          <li class="main__nav-item">
+            <a class="main__nav-link" href="#"> conference hall </a>
+          </li>
+          <li class="main__nav-item">
+            <a class="main__nav-link" href="#"> contacts </a>
+          </li>
+        </ul>
+        <button class="main__nav-toggle main__nav-toggle--is-closed main__nav-toggle--rooms" type="button"></button>
+
+        <div class="adress">
+          <span class="adress__tel"> +38 032 297 50 20 </span>
+          <adress class="adress__geo"> 8 Lystopadovoho Chynu,Lviv </adress>
+        </div>
+        
+        <div class="socials">
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a class="socials__link" href="#"> facebook </a> 
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#"> twitter </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#"> instagram </a>
+            </li>
+          </ul>
+        </div>
+
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section class="hero-block">
+      <div class="hero-block__wrapper container">
+        <h1 class="hero-block__title"> Superior twin </h1>
+        <button class="hero-block__button"> Book room </button>
+      </div>
+    </section>
+
+    <section class="premier">
+      <div class="premier__wrapper container">
+        <h2 class="premier__title visually-hidden"> Rooms presentation </h2>
+        <p class="premier__target"> All suites have a unique design because we want our every guest to feel special. </p>
+        <span class="premier__since"> Since 1973 </span>
+        <p class="premier__description"> 
+          The Superior twin would perfectly match the needs of those who plan to stay long. 
+          The bright and airy room is equipped with superior soft Italian furniture. 
+          Large windows open a beautiful view to the historical part of the city. 
+          Contemporary interior design and comfortable beds will make your stay cozy and delightful.</p>
+        <span class="premier__class"> Premier Standard </span>
+        <picture class="premier__picture">
+          <img src="/images/img/gallery-5.jpg" width="375" height="425" alt="room interior">
+        </picture>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div class="benefits__wrapper container">
+        <h3 class="benefits__title"> Superior Twin </h3>
+        <span class="benefits__description"> All rooms in Bank Hotel have a special charm achieved through a combination of modern functional design and original 20th century layout. </span>
+        <picture class="benefits__image">
+          <img src="/images/img/bathroom.jpg" width="355" height="355" alt="bathroom image">
+        </picture>
+        <p class="benefits__contain">
+          The Superior twin includes two functional zones: a living room with the best Italian furniture, and an isolated cozy bedroom with a large bed.
+          Here, you will find space both for work and comfortable rest.
+          Hotel offers supreme comfort and outstanding 24-hour room service to make sure that the time you spend here is enjoyable and pleasant. 
+        </p>
+        <a class="benefits__button"> /book room </a>
+      </div>
+    </section>
+
+  </main>
+
+  <section class="connect">
+    <div class="connect__wrapper container">
+
+      <div class="connect__adress adress">
+        <span class="adress__tel adress__tel--connect"> +38 032 297 50 20 </span>
+        <adress class="adress__geo adress__geo--connect"> 8 Lystopadovoho Chynu,Lviv </adress>
+      </div>
+      <h2 class="visually-hidden"> connect </h2>
+      <div class="connect__title">
+        <span class="connect__title-first"> get in </span>
+        <span class="connect__title-second"> touch </span>
+      </div>
+      <picture class="connect__image">
+        <img src="/images/img/chair.jpg" alt="chair photo">
+      </picture>
+      
+      <form class="connect__form form--connect" action="#" method="post">
+        <label class="connect__form-label"> Find a room </label>
+          <select class="form__check-in"></select>
+          <select class="form__check-out"></select>
+          <button class="form__button form__button--connect" type="button"> Book room </button>
+      </form>
+    </div>
+  </section>
+  
+
+  <footer class="footer">
+      <div class="footer__wrapper container">
+        <div class="footer__about">
+          <h3 class="footer__about-title"> about us </h3>
+          <p class="footer__about-description">The five-star hotel in a beautiful European city with a modern restaurant, conference-hall, and art-bar.</p>
+        </div>
+
+        <div class="footer__sign sign">
+          <h3 class="sign__title">new</h3>
+          <p class="sign__description">Sign up to our newsletter not to miss exclusive offers and information about the upcoming events.</p>
+          <form class="sign__form" action="#" method="get">
+            <input class="sign__input" type="email">
+          </form>
+        </div>
+
+        <div class="footer__socials socials">
+          <h3 class="socials__title">socials</h3>
+          <ul class="socials__list">
+            <li class="socials__item">facebook</li>
+            <li class="socials__item">instagram</li>
+            <li class="socials__item">twitter</li>
+          </ul>
+        </div>
+
+        <div class="footer__copyright copyright">
+          <span class="copyright__content">©2021 All rights reserved. BankHotel</span>
+        </div>
+
+      </div>
+  </footer>
+  
+</body>
+</html>

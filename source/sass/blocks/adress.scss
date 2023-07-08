@@ -28,6 +28,7 @@
         margin-bottom: 70px;
         width: 168px;
         color: $bg-secondary;
+        align-self: flex-start;
 
         &::before {
             background-color: $bg-secondary;
