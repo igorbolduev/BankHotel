@@ -1,9 +1,15 @@
 .body {
     margin: 0;
+    padding: 0;
     font-family: "Arial", sans-serif, serif;
     background-color: $bg-primary;
     display: flex;
     flex-direction: column;
     height: 100%;
     border-right: 1px solid $bg-secondary;
+
+    &--facility {
+        background-color: $bg-secondary;
+        color: $white;
+    }
 }

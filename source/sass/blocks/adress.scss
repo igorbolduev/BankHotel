@@ -35,12 +35,20 @@
             opacity: 0.5;
         }
     }
+
+    &--fasilities {
+        color: $white;
+
+        &::before {
+            background-color: $white;
+            opacity: 0.5;
+        }
+    }
 }
 
 .adress__geo {
     text-transform: uppercase;
     font-size: 18px;
-    line-height: auto;
     color: $white;
     margin-bottom: 40px;
 
@@ -48,5 +56,9 @@
         width: 176px;
         color: $bg-secondary;
         align-self: flex-end;
+    }
+
+    &--fasilities {
+        color: $white;
     }
 }

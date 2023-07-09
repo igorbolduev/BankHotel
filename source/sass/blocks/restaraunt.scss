@@ -1,0 +1,49 @@
+.restaraunt__wrapper {
+    padding-top: 50px;
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.restaraunt__title {
+    margin-bottom: 70px;
+    align-self: flex-start;
+    color: $yellow-color;
+}
+
+.restaraunt__slogan {
+    margin-bottom: 104px;
+    font-family: "Antic Didone", Arial, sans-serif;
+    font-size: 24px;
+    line-height: 20px;
+    align-self: flex-start;
+}
+
+.restaraunt__description {
+    margin: 0;
+    margin-bottom: 70px;
+    padding: 0;
+    font-size: 13px;
+    line-height: 23px;
+    width: 250px;
+    align-self: flex-end;
+}
+
+.restaraunt__picture {
+    margin-bottom: 70px;
+}
+
+.restaraunt__subtitle {
+    margin-bottom: 20px;
+    align-self: flex-start;
+}
+
+.restaraunt__review {
+    margin: 0;
+    padding: 0;
+    width: 293px;
+    font-size: 13px;
+    line-height: 23px;
+    align-self: flex-start;
+}

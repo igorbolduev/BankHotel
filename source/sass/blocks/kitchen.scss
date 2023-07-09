@@ -1,0 +1,49 @@
+.kitchen__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+}
+
+.kitchen__slogan {
+    margin-bottom: 70px;
+    font-family: "Antic Didone", Arial, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    width: 264px;
+    align-self: flex-start;
+}
+
+.kitchen__image {
+    margin-bottom: 70px;
+}
+
+.kitchen__title {
+    margin-bottom: 20px;
+    width: 242px;
+    align-self: flex-end;
+}
+
+.kitchen__features {
+    margin: 0;
+    margin-bottom: 70px;
+    padding: 0;
+    font-size: 13px;
+    line-height: 23px; 
+    width: 264px;
+    align-self: flex-start;
+}
+
+.kitchen__image-decor {
+    margin-bottom: 30px;
+    align-self: flex-start;
+}
+
+.kitchen__advantage {
+    margin: 0;
+    padding: 0;
+    width: 192px;
+    text-transform: uppercase;
+    color: $yellow-color;
+    align-self: flex-start;
+}
