@@ -1,4 +1,5 @@
 .fasilities__wrapper {
+    position: relative;
     padding: 70px 0;
     display: flex;
     flex-direction: column;
@@ -7,9 +8,14 @@
 
 .fasilities__title {
     margin-bottom: 50px;
-    position: relative;
     width: 263px;
     align-self: flex-start
+}
+
+.fasilities__icon {
+    position: absolute;
+    top: 80px;
+    right: 200px;
 }
 
 .fasilities__flag {

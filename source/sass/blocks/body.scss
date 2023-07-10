@@ -5,7 +5,7 @@
     background-color: $bg-primary;
     display: flex;
     flex-direction: column;
-    height: 100%;
+    min-height: 100%;
     border-right: 1px solid $bg-secondary;
 
     &--facility {

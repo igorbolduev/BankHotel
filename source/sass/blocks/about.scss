@@ -1,54 +1,79 @@
 .about {
     background-color: $bg-secondary;
-}
-
-.about__wrapper {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
-    padding-bottom: 70px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 65%;
+        height: 1px;
+        background-color: $white;
+        opacity: 0.2;
+    }
 
     &::before {
         content: "";
         position: absolute;
-        bottom: 250px;
-        right: 20px;
-        width: 25px;
-        height: 25px;
-        background-image: url('/images/img/flag__icon.svg');
-        background-repeat: no-repeat;
+        top: 0;
+        right: 30%;
+        width: 1px;
+        height: 50%;
+        background-color: $white;
+        opacity: 0.2;
     }
 }
 
+.about__wrapper {
+    padding-top: 50px;
+    padding-bottom: 70px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .about__title {
+    margin-bottom: 70px;
     width: 185px;
     color: $yellow-color;
     align-self: flex-start;
     text-align: end;
-    align-self: auto;
-    margin-bottom: 70px;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: -50px;
+        left: -9px;
+        width: 140%;
+        height: 5em;
+        border: 1px solid $white;
+        border-radius: 50% 50% 0 0;
+        opacity: 0.2;
+    }
 }
 
 .about__image {
+    position: relative;
     margin-bottom: 70px;
 }
 
 .about__subtitle {
-    margin: 0;
     margin-bottom: 20px;
-    padding: 0;
     font-family: "Antic Didone", Arial, sans-serif;
-    font-size: 30px;
-    line-height: 30px;
     color: $white;
     align-self: flex-start;
 }
 
+.about__label-icon {
+    position: absolute;
+    bottom: 250px;
+    right: 50px;
+}
+
 .about__description {
-    margin: 0;
-    padding: 0;
     color: $white;
     width: 293px;
     align-self: flex-start;
