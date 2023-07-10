@@ -1,5 +1,6 @@
 .hero-block {
     background-image: url("/images/img/room__space.jpg");
+    background-position: (50%, 0);
     display: block;
     width: 375px;
     height: 470px;
@@ -15,8 +16,12 @@
     font-weight: 100;
     line-height: 60px;
     color: $yellow-color;
-    margin: 0;
-    margin-top: 100px;
+    padding-top: 100px;
+}
+
+.hero-block__decor {
+    position: absolute;
+    left: -10px;
 }
 
 .hero-block__button {
